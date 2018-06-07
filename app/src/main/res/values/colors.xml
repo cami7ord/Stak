@@ -4,6 +4,10 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#03A7F1</color>
 
+    <color name="white">#FFFFFF</color>
+
+    <color name="background">#03A9F4</color>
+
     <color name="material_deep_purple_50">#EDE7F6</color>
     <color name="material_deep_purple_500">#673AB7</color>
     <color name="material_deep_purple_700">#512DA8</color>

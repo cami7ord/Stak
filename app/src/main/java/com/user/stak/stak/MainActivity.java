@@ -21,12 +21,14 @@ import com.google.firebase.auth.FirebaseUser;
 import com.user.stak.stak.auth.BaseActivity;
 import com.user.stak.stak.auth.LoginActivity;
 import com.user.stak.stak.chat.ChatActivity;
+import com.user.stak.stak.questions.QuestionsActivity;
 
 public class MainActivity extends BaseActivity {
 
     private TextView mNameView;
     private TextView mEmailView;
     private Button mLogoutButton;
+    private Button mQuestionsButton;
 
     private FirebaseAuth mAuth;
 
@@ -34,7 +36,7 @@ public class MainActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         mNameView = findViewById(R.id.main_user_name);
@@ -63,6 +65,15 @@ public class MainActivity extends BaseActivity {
                                 finish();
                             }
                         });
+            }
+        });
+
+        mQuestionsButton = findViewById(R.id.main_accumulate_button);
+        mQuestionsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, QuestionsActivity.class);
+                startActivity(intent);
             }
         });
 
