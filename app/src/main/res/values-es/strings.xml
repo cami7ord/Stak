@@ -1,0 +1,23 @@
+<resources>
+
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Contraseña</string>
+    <string name="action_sign_in">Iniciar sesión</string>
+    <string name="action_sign_out">Cerrar sesión</string>
+    <string name="error_invalid_email">Este email no es válido</string>
+    <string name="error_invalid_password">Esta contraseña es muy corta</string>
+    <string name="error_field_required">Este campo es requerido</string>
+    <string name="title_activity_registration">Registrarse</string>
+
+    <!-- GENERICS -->
+    <string name="loading">Cargando</string>
+
+    <!-- LOGIN -->
+    <string name="login_register_text">No tienes cuenta aún? <u>Crea una</u></string>
+
+    <!-- REGISTRATION -->
+    <string name="registration_button">Crear cuenta</string>
+
+</resources>

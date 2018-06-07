@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "878013066458",
+    "firebase_url": "https://stak-bee3e.firebaseio.com",
+    "project_id": "stak-bee3e",
+    "storage_bucket": "stak-bee3e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:878013066458:android:6b32d4ba22a01495",
+        "android_client_info": {
+          "package_name": "com.user.stak.stak"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "878013066458-tjb887ta6e6h96tdjuvod2c676fvoogf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.user.stak.stak",
+            "certificate_hash": "b01a5a5642c01c889d395f4b1b92d50bd8c1b6c0"
+          }
+        },
+        {
+          "client_id": "878013066458-j6hii3l7sq63ogvctp4147af86uk001s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCe6aQgGK7AdUoveBgKsgUrh15yfjmUOTs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "878013066458-j6hii3l7sq63ogvctp4147af86uk001s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
