@@ -33,19 +33,17 @@ public class QuestionsActivity extends AppCompatActivity {
         mRecyclerView.setLayoutManager(mLayoutManager);
         mRecyclerView.addItemDecoration(new DividerItemDecoration(mRecyclerView.getContext(), DividerItemDecoration.VERTICAL));
 
-        String[] options = new String[4];
-        options[0] = "Uno";
-        options[1] = "Dos";
-        options[2] = "Tres";
-        options[3] = "Cuatro";
+        String[] options = new String[5];
+        options[0] = "Casado";
+        options[1] = "Soltero";
+        options[2] = "Divorciado";
+        options[3] = "Viudo";
+        options[4] = "Unión libre";
 
-        List<Question> questions = new ArrayList<Question>();
-        questions.add(new BinaryQuestion("binary", "Binary 1", false));
-        questions.add(new BinaryQuestion("binary", "Binary 2", true));
-        questions.add(new NumericalQuestion("numerical", "Numerical 1", 1, 0, 100));
-        questions.add(new NumericalQuestion("numerical", "Numerical 2", 2, 0, 100));
-        questions.add(new SingleResponseQuestion("single_response", "SResponse 1", 1, options));
-        questions.add(new SingleResponseQuestion("single_response", "SResponse 2", 2, options));
+        List<Question> questions = new ArrayList<>();
+        questions.add(new BinaryQuestion("binary", "¿Eres mayor de edad?", false));
+        questions.add(new SingleResponseQuestion("single_response", "¿Estado civil?", 1, options));
+        questions.add(new NumericalQuestion("numerical", "¿Cuál es tu edad?", 27, 0, 100));
 
         mAdapter = new QuestionsListAdapter(questions);
         mRecyclerView.setAdapter(mAdapter);
