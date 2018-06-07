@@ -6,11 +6,6 @@ public class NumericalQuestion extends Question {
     private int min;
     private int max;
 
-    public NumericalQuestion(String type, String title, Object answer) {
-        super(type, title, answer);
-        this.answer = ((int) answer);
-    }
-
     public NumericalQuestion(String type, String title, int answer, int min, int max) {
         super(type, title, answer);
         this.answer = answer;
